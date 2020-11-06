@@ -1,0 +1,137 @@
+#page-login {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-auto-rows: 1fr 4fr;
+
+  color: var(--color-text-in-primary);
+}
+
+#page-login .form-login {
+  background-color: var(--color-background);
+  color: var(--color-text-title);
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-login .form-login form, footer {
+  width: 95%;
+}
+
+#page-login .form-login form fieldset {
+  border: none;
+}
+
+#page-login .form-login form fieldset legend {
+  font-size: 3.4rem;
+  line-height: 4.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+#page-login .form-login form fieldset .fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#page-login .form-login form fieldset .check {
+  display: flex;
+  align-items: center;
+}
+
+#page-login .form-login form fieldset .check input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #dcdce5;
+  border-radius: 8px;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+#page-login .form-login form fieldset .check input:checked {
+  appearance: none;
+  background-color: var(--color-secundary);
+  border-radius: 8px;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+#page-login .form-login form fieldset .check input:checked:after {
+  content: "\2713";
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#page-login .form-login form fieldset .check label {
+  font-size: 1.4rem;
+  color: var(--color-text-complement);
+  margin-left: 15px;
+}
+
+#page-login .form-login form fieldset .fields a {
+  font-size: 1.4rem;
+  color: var(--color-text-complement);
+  text-decoration: none;
+}
+
+#page-login .form-login form fieldset .fields a:hover {
+  color: var(--color-primary);
+}
+
+#page-login .form-login footer {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-login .form-login footer .signup p {
+  color: var(--color-text-base);
+  font: 400 1.6rem Poppins;
+}
+
+#page-login .form-login footer .signup a {
+  color: var(--color-primary-light);
+  font: 700 1.6rem Poppins;
+}
+
+#page-login .form-login footer span {
+  opacity: 0.4;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+#page-login .form-login footer span img {
+  margin-left: 1rem;
+}
+
+@media (min-width: 700px) {
+  #page-login {
+    max-width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #page-login .form-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #page-login .form-login form, footer {
+    width: 70%;
+  }
+  
+}

@@ -1,0 +1,43 @@
+.input-block {
+  position: relative;
+}
+
+.input-block + .input-block {
+  margin-top: 1.4rem;
+}
+
+.input-block label {
+  font-size: 1.4rem;
+}
+
+.input-block .input-field {
+  width: 100%;
+  height: 5.6rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  background: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  outline: 0;
+  padding: 0 1.6rem;
+  font: 1.6rem Archivo;
+  
+  display: flex;
+  align-items: center;
+}
+
+.input-field input {
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+
+.input-field:focus-within::before {
+  content: '';
+  width: 2px;
+  height: 70%;
+  position: relative;
+  top: 0;
+  left: -1.6rem;
+  background-color: #8258E5;
+}

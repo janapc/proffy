@@ -1,0 +1,135 @@
+:root {
+  font-size: 60%;
+  
+  --color-background: #F0F0F7;
+  --color-primary-lighter: #9871F5;
+  --color-primary-light: #916BEA;
+  --color-primary: #8257E5;
+  --color-primary-dark: #774DD6;
+  --color-primary-darker: #6842C2;
+  --color-secundary: #04D361;
+  --color-secundary-dark: #04BF58;
+  --color-title-in-primary: #FFFFFF;
+  --color-text-in-primary: #D4C2FF;
+  --color-text-title: #32264D;
+  --color-text-complement: #9C98A6;
+  --color-text-base: #6A6180;
+  --color-line-in-white: #E6E6F0;
+  --color-input-background: #F8F8FC;
+  --color-button-text: #FFFFFF;
+  --color-box-base: #FFFFFF;
+  --color-box-footer: #FAFAFC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background: var(--color-background);
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem Poppins;
+  color: var(--color-text-base);
+}
+
+.container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+.btn-container button {
+  height: 6rem;
+  width: 100%;
+  border: none;
+  margin-top: 3.6rem;
+  border-radius: 0.8rem;
+  font: 700 2rem Archivo;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.btn-invalid {
+  background-color: #dcdce5;
+  color: var(--color-text-complement);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-valid {
+  background-color: var(--color-secundary);
+  color: var(--color-button-text);
+}
+
+.btn-valid:hover {
+  background-color: var(--color-secundary-dark);
+}
+
+.error {
+  color: #dc4034;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.logo-container {
+  background: var(--color-primary);
+  background-image: url("../../assets/images/success-background.svg");
+  background-size: contain;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 10px;
+}
+
+.logo-container .logo-container-img {
+  height: 8rem;
+  margin-top: 2rem;
+}
+
+.logo-container h2 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+  
+  .logo-container .logo-container-img {
+    height: 12rem;
+  }
+  
+  .logo-container a {
+    position: absolute;
+    top: 0;
+  }
+}

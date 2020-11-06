@@ -1,0 +1,53 @@
+#page-reset-password {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-auto-rows: 1fr 4fr;
+
+  color: var(--color-text-in-primary);
+}
+
+#page-reset-password .form-reset-password {
+  background-color: var(--color-background);
+  color: var(--color-text-title);
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-reset-password .form-reset-password form {
+  width: 95%;
+}
+
+#page-reset-password .form-reset-password form fieldset {
+  border: none;
+}
+
+#page-reset-password .form-reset-password form fieldset legend {
+  font-size: 3.4rem;
+  line-height: 4.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 700px) {
+  #page-reset-password {
+    max-width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  #page-reset-password .form-reset-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #page-reset-password .form-reset-password form {
+    width: 70%;
+  }
+}

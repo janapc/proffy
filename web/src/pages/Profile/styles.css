@@ -1,0 +1,240 @@
+#page-profile {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-auto-rows: 2fr 1fr;
+}
+
+#page-profile header {
+  display: flex;
+  flex-direction: column;
+}
+
+#page-profile header .top-bar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: var(--color-primary-dark);
+  height: 6.5rem;
+  align-items: center;
+}
+
+#page-profile header .top-bar-container p,
+.subject {
+  color: var(--color-text-in-primary);
+}
+
+#page-profile header .top-bar-container img {
+  width: 5rem;
+}
+
+#page-profile header .header-container {
+  background-image: url("../../assets/images/success-background.svg");
+  background-position: center;
+  background-size: contain;
+  background-color: var(--color-primary);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 40rem;
+}
+
+#page-profile header .header-container img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#page-profile header .header-container img:hover {
+  opacity: 0.7;
+}
+
+#page-profile header .header-container .icon-container {
+  color: rgb(255, 255, 255);
+  background-color: var(--color-secundary);
+  left: -45px;
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-profile header .header-container input[type="file"] {
+  display: none;
+}
+
+#page-profile header .header-container h2 {
+  margin-top: 3.2rem;
+  color: var(--color-title-in-primary);
+  font: bold 3.6rem Archivo;
+}
+
+#page-profile main {
+  background: var(--color-box-base);
+  width: 100%;
+  max-width: 74rem;
+  border-radius: 0.8rem;
+  margin: -3.2rem auto 3.2rem;
+  padding-top: 6.4rem;
+  height: auto;
+}
+
+#page-profile main fieldset {
+  border: 0;
+  padding: 0 2.4rem;
+}
+
+#page-profile main fieldset + fieldset {
+  margin-top: 6.4rem;
+}
+
+#page-profile main fieldset legend {
+  font: 700 2.4rem Archivo;
+  color: var(--color-text-title);
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--color-line-in-white);
+}
+
+#page-profile main fieldset legend button {
+  background: none;
+  border: 0;
+  color: var(--color-primary);
+  font: 700 1.6rem Archivo;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+#page-profile main fieldset legend button:hover {
+  color: var(--color-primary-dark);
+}
+
+#page-profile main fieldset .input-block + .textarea-block,
+#page-profile main fieldset .select-block + .input-block {
+  margin-top: 2.4rem;
+}
+
+#page-profile main label {
+  color: var(--color-text-complement);
+}
+
+#page-profile main footer {
+  padding: 4rem 2.4rem;
+  background: var(--color-box-footer);
+  border-top: 1px solid var(--color-line-in-white);
+  margin-top: 6.4rem;
+  width: 100%;
+}
+
+#page-profile main footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--color-text-complement);
+}
+
+#page-profile main footer p img {
+  margin-right: 2rem;
+}
+
+#page-profile main footer button {
+  width: 100%;
+  height: 5.6rem;
+  background: var(--color-secundary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 3.2rem;
+}
+
+#page-profile main footer button:hover {
+  background: var(--color-secundary-dark);
+}
+
+.delete-item a {
+  text-decoration: none;
+  color: #E33D3D;
+  font: bold 1.4rem Archivo;
+  cursor: pointer;
+}
+
+.delete-item  {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.delete-item :before, .delete-item :after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 50%;
+  height: 1px;
+  content: '\a0';
+  background-color: #E6E6F0;
+}
+
+.delete-item :before {
+  margin-left: -50%;
+  text-align: right;
+}
+
+
+@media (min-width: 700px) {
+  #page-profile {
+    max-width: 100vw;
+  }
+
+  #page-profile main fieldset {
+    padding: 0 6.4rem;
+  }
+
+  #page-profile main footer {
+    padding: 4rem 6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #page-profile main .schedule-item .schedule-item-fields {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 1.6rem;
+  }
+
+  #page-profile main .schedule-item .input-block {
+    margin-top: 0 !important;
+  }
+
+  #page-profile main footer p {
+    justify-content: space-between;
+  }
+
+  #page-profile main footer button {
+    width: 20rem;
+    margin-top: 0;
+  }
+}

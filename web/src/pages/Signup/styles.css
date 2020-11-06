@@ -1,0 +1,95 @@
+#page-signup {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-auto-rows: 1fr 4fr;
+
+  color: var(--color-text-in-primary);
+}
+
+#page-signup .form-signup {
+  background-color: var(--color-background);
+  color: var(--color-text-title);
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-signup .form-signup form {
+  width: 95%;
+}
+
+#page-signup .form-signup form fieldset {
+  border: none;
+}
+
+#page-signup .form-signup form fieldset legend {
+  font-size: 3.4rem;
+  line-height: 4.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#page-signup .form-signup form fieldset p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+#page-signup .form-signup form fieldset .proffy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#page-signup .form-signup form fieldset .proffy .icon {
+  align-self: center;
+}
+
+#page-signup .form-signup form fieldset .avatar {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-primary-lighter);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+#page-signup .form-signup form fieldset .avatar #avatarImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: center;
+}
+
+#page-signup .form-signup form fieldset .avatar input[type="file"] {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  #page-signup {
+    max-width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #page-signup .form-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #page-signup .form-signup form {
+    width: 70%;
+  }
+}
