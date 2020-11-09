@@ -2,7 +2,7 @@ import Constants from "expo-constants";
 
 const ENV = {
   dev: {
-    apiUrl: "http://192.168.0.102:3333", //expo local url + port api
+    apiUrl: "", //expo local url + port api
   },
 };
 
