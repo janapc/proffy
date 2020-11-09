@@ -9,19 +9,49 @@
   <img alt="License" src="https://img.shields.io/github/license/janapc/proffy"/>
   <img alt="Language count" src="https://img.shields.io/github/languages/count/janapc/proffy"/>
   <img alt="Language top" src="https://img.shields.io/github/languages/top/janapc/proffy"/>
+    <img alt="Repo size" src="https://img.shields.io/github/repo-size/janapc/proffy"/>
 </p>
 
 <h4 align="center">
   This project was created in NLW of <a href="https://rocketseat.com.br">Rocketseat</a> with the purpose of connecting the teachers with the students, where the student can choose a subject, day of the week, and hour available and search teachers available.
-</h1>
+</h4>
 
 
 <p align="center">
+  <a href="#key-environment-variables">Environment variables</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#arrowdown-installations">Installations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#fire-demo">Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#boom-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#page_facing_up-license">License</a>
 </p>
 
+***
+## :key: environment variables:
+In the folder server create a file .env with these configurations:
+- **SECRET** = the variable secret to jwt
+- **MAILERHOST** = the host of send mail
+- **MAILERPORT** = the port of send mail
+- **MAILERUSER** = the user of send mail
+- **MAILERPASS** = the password of send mail
+- **POSTGRESURL** = the url of postgres
+- **EMAIL** = the email of owner
+
+In the folder web create a file .env with these configurations:
+- **REACT_APP_BASE_URL** = the url of server
+
+In the folder mobile inside of src/utils/environment:
+- **apiUrl** = the url of server
+***
+
+## :arrow_down: Installations:
+To installations dependencies, follow the steps below inside folders:
+```
+  yarn or npm i
+```
+to run the folders, follow the steps below inside folders:
+```
+  yarn start or npm run start
+```
 
 ***
 
